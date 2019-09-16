@@ -1,0 +1,114 @@
+@font-face {
+	font-family: FuenteDS;
+	src: url(../fuentes/DancingScript-bold.otf);
+}
+body{
+  background-color: #02010a;
+  width: 90%;
+  margin: 0 auto;
+  font-family: FuenteDS;
+  box-sizing: border-box;
+}
+header{
+	display: flex;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+	animation: slidein 2s;
+}
+header h1{
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    text-align: left;
+    margin: 2%;
+    padding: 2%;
+}
+header nav{
+	margin: 5%;
+  margin-left: auto;
+	margin-top: 5%;
+  text-decoration: none;
+}
+header nav a{
+  color: white;
+}
+@keyframes slidein{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
+}
+div img{
+  width: 50%;
+}
+div [class*="image"]{
+  flex: 30%;
+}
+div img{
+	box-shadow: 2px 2px 2px #02010a;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 90%
+}
+.contenedor{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
+.image1{
+    -webkit-filter: blur(10px);
+    filter:blur(10px);
+}
+.image3{
+  filter: sepia(90%);
+}
+.image2{
+  filter: grayscale(100%);
+}
+.image4{
+  filter: grayscale(100%);
+}
+.image6{
+  filter: grayscale(100%);
+}
+footer{
+  width: 100%;
+  display: flex;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+footer div{
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+@media screen and (max-width: 900px){
+	header{
+		flex-direction: column;
+		text-align: center;
+	}
+	header h1{
+		flex-direction: column;
+		text-align: center;
+	}
+	header nav{
+		flex-direction: column;
+		margin: auto;
+	}
+	.contenedor{
+		flex-direction: column;
+	}
+	footer{
+		flex-direction: column;
+	}
+	footer div{
+		margin: 0 auto;
+		width: 80%;
+	}
+}

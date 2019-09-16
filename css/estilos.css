@@ -1,0 +1,118 @@
+@font-face {
+	font-family: FuenteDS;
+	src: url(../fuentes/DancingScript-bold.otf);
+}
+body{
+  background-color: #02010a;
+  width: 90%;
+  margin: 0 auto;
+  font-family: FuenteDS;
+  box-sizing: border-box;
+}
+header{
+	display: flex;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+	animation: slidein 2s;
+}
+header h1{
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    text-align: left;
+    margin: 2%;
+    padding: 2%;
+}
+header nav{
+	margin: 5%;
+  margin-left: auto;
+	margin-top: 5%;
+  text-decoration: none;
+}
+header nav a{
+  color: white;
+}
+@keyframes slidein{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
+}
+#central img{
+  width: 90%;
+	margin: 4%auto;
+  box-shadow: 2px 2px 2px #02010a;
+}
+#central{
+	width: 100%;
+	display: flex;
+  background-color: #82c3a6;
+}
+#secundario{
+  background-color: #d5c75f;
+  border: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#secundario img{
+	box-shadow: 2px 2px 2px #02010a !important;
+}
+#secundario img{
+  width: 44%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 2px 2px 0px #82c3a6;
+}
+.bici:hover{
+  transform: rotate(10deg);
+}
+.bolt:hover{
+  transform: translate3d(20px, -5px, 0);
+}
+footer{
+  width: 100%;
+  display: flex;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+footer div{
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+@media screen and (max-width: 900px){
+	header{
+		flex-direction: column;
+		text-align: center;
+	}
+	header h1{
+		flex-direction: column;
+		text-align: center;
+	}
+	header nav{
+		flex-direction: column;
+		margin: auto;
+
+	}
+	#secundario{
+		flex-direction: column;
+	}
+	#secundario img{
+    margin: 2% auto;
+		width: 90%;
+  }
+	footer{
+		flex-direction: column;
+	}
+	footer div{
+		margin: 0 auto;
+		width: 80%;
+	}
+}
